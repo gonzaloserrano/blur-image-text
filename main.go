@@ -19,10 +19,10 @@ func main() {
 		panic("missing image path")
 	}
 	if len(os.Args) < 3 {
-		panic("missing blur level number")
+		panic("missing blur level number [1-10]")
 	}
 	if len(os.Args) < 4 {
-		panic("missing text confidence number")
+		panic("missing text confidence level number [1-100]")
 	}
 
 	path := os.Args[1]
